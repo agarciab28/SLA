@@ -16,6 +16,7 @@ class AddForeignKeysToContratoTable extends Migration {
 		{
 			$table->foreign('Cliente', 'contrato_cliente_Id_cliente_fk')->references('Id_cliente')->on('cliente')->onUpdate('CASCADE')->onDelete('CASCADE');
 			$table->foreign('Color', 'contrato_colores_Id_color_fk')->references('Id_color')->on('colores')->onUpdate('CASCADE')->onDelete('CASCADE');
+			$table->foreign('Tipo', 'contrato_tipos_Id_tipo_fk')->references('Id_tipo')->on('tipos')->onUpdate('CASCADE')->onDelete('CASCADE');
 		});
 	}
 
@@ -31,6 +32,7 @@ class AddForeignKeysToContratoTable extends Migration {
 		{
 			$table->dropForeign('contrato_cliente_Id_cliente_fk');
 			$table->dropForeign('contrato_colores_Id_color_fk');
+			$table->dropForeign('contrato_tipos_Id_tipo_fk');
 		});
 	}
 

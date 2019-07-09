@@ -18,6 +18,7 @@ class CreateClienteTable extends Migration {
 			$table->string('Nombre', 15);
 			$table->string('Ap_paterno', 20);
 			$table->string('Ap_materno', 20)->nullable();
+			$table->char('Genero', 1);
 			$table->string('Colonia', 30);
 			$table->string('Calle', 30);
 			$table->integer('Numero');
