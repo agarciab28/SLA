@@ -1,0 +1,40 @@
+.img_background{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.color_background{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255,245,157, 0.6);
+}
+
+.center{
+  margin: auto;
+  width: 90%;
+}
+
+#user:focus + label, #password:focus + label {
+ color: rgb(93, 46, 66);
+}
+
+#user:focus, #password:focus {
+ border-bottom: 1px solid rgb(93, 46, 66);
+ box-shadow: none;
+}
+
+.btn{
+  background-color: rgb(93, 46, 66);
+}
+
+.btn:hover{
+  background-color: rgba(93, 46, 66, 0.9);
+}
+
+.btn:active{
+  background-color: rgb(93, 46, 66);
+}
