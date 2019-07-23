@@ -32,7 +32,7 @@
             <a href="#" data-target="slide-out" class="black-text sidenav-trigger left"><i class="material-icons">menu</i></a>
             <span class="black-text left">Usuario</span>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a class="black-text" href="#!">Cerrar Sesión</a></li>
+              <li class=""><a class="black-text logout-btn" href="#!">Cerrar Sesión</a></li>
             </ul>
           </div>
         </div>
@@ -49,5 +49,6 @@
   <script src="https://kit.fontawesome.com/dc15f493f0.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="{{asset('js/init.js')}}"></script>
+  <script src="{{asset('js/pickers.js')}}"></script>
   @yield('script')
 </html>

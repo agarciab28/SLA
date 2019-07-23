@@ -19,16 +19,16 @@
                   <form class="col s12" action="index.html" method="post">
                     <div class="row">
                       <div class="input-field col m6 s12">
-                        <input id="user" type="text" class="validate">
+                        <input id="user" name="user" type="text" class="validate">
                         <label for="user"> <i class="fas fa-user"></i> Usuario </label>
                       </div>
                       <div class="input-field col m6 s12">
-                        <input id="password" type="password" class="validate">
+                        <input id="password" name="password" type="password" class="validate">
                         <label for="password"> <i class="fas fa-lock"></i> Contraseña </label>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col m4 6 push-m4 push-s3">
+                      <div class="col m4 s6 push-m4 push-s3">
                         <a href="{{route('admin_home')}}" class="btn">Iniciar Sesión</a>
                       </div>
                     </div>

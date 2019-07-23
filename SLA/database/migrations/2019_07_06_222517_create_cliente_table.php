@@ -15,17 +15,17 @@ class CreateClienteTable extends Migration {
 		Schema::create('cliente', function(Blueprint $table)
 		{
 			$table->integer('Id_cliente', true);
-			$table->string('Nombre', 15);
+			$table->string('Nombre', 30);
 			$table->string('Ap_paterno', 20);
 			$table->string('Ap_materno', 20)->nullable();
 			$table->char('Genero', 1);
 			$table->string('Colonia', 30);
-			$table->string('Calle', 30);
-			$table->integer('Numero');
+			$table->string('Calle', 40);
+			$table->string('Numero', 6);
 			$table->string('Estado', 30);
 			$table->string('Ciudad', 30);
-			$table->integer('Telefono');
-			$table->integer('Clave_de_registro')->nullable();
+			$table->string('Telefono', 15);
+			$table->string('Rfc', 13)->nullable();
 		});
 	}
 
