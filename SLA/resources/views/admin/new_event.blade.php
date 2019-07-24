@@ -12,13 +12,6 @@
     <form class="col s12" action="" method="post">
       <div class="row">
         <div class="input-field col m6 s12">
-          <select>
-            <option value="" disabled selected>Elige una Opción</option>
-            <option value="M">Alejandro García (asfdes34235dafsa)</option>
-          </select>
-          <label>Cliente</label>
-        </div>
-        <div class="input-field col m6 s12">
           <input id="date" name="date" type="text" class="datepicker no-autoinit">
           <label for="date"> Fecha </label>
         </div>
@@ -47,6 +40,49 @@
             <option value="M">Rojo</option>
           </select>
           <label>Color</label>
+        </div>
+        <div class="input-field col m6 s12">
+          <input id="name" name="name" type="text">
+          <label for="name"> Nombre </label>
+        </div>
+        <div class="input-field col m6 s12">
+          <input id="lastname" name="lastname" type="text">
+          <label for="lastname"> Apellido Paterno </label>
+        </div>
+        <div class="input-field col m6 s12">
+          <input id="lastname_m" name="lastname_m" type="text">
+          <label for="lastname_m"> Apellido Materno </label>
+        </div>
+        <div class="input-field col m6 s12">
+          <input id="state" name="state" type="text" disabled>
+          <label for="state"> Estado </label>
+        </div>
+        <div class="input-field col m6 s12">
+          <input id="city" name="city" type="text" disabled>
+          <label for="city"> Ciudad </label>
+        </div>
+        <div class="input-field col m6 s12">
+          <select>
+            <option value="" disabled selected>Elige una Opción</option>
+            <option value="Santiaguito">Santiaguito</option>
+          </select>
+          <label>Colonia</label>
+        </div>
+        <div class="input-field col m6 s12">
+          <input id="street" name="street" type="text">
+          <label for="street"> Calle </label>
+        </div>
+        <div class="input-field col m6 s12">
+          <input id="number" name="number" type="text">
+          <label for="number"> Número </label>
+        </div>
+        <div class="input-field col m6 s12">
+          <input id="phone" name="phone" type="tel">
+          <label for="phone"> Télefono </label>
+        </div>
+        <div class="input-field col m6 s12">
+          <input id="rfc" name="rfc" type="text">
+          <label for="rfc"> RFC </label>
         </div>
       </div>
       <div class="row">

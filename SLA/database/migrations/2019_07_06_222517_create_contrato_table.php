@@ -15,18 +15,24 @@ class CreateContratoTable extends Migration {
 		Schema::create('contrato', function(Blueprint $table)
 		{
 			$table->integer('Id_contrato', true);
-			$table->integer('Cliente')->index('contrato_cliente_Id_cliente_fk');
 			$table->date('Fecha')->unique();
 			$table->integer('Tipo')->index('contrato_tipos_Id_tipo_fk');
 			$table->integer('Personas');
 			$table->string('Hora_ini', 15);
 			$table->integer('Horas');
 			$table->integer('Color')->index('contrato_colores_Id_color_fk');
-			$table->date('Fecha_expedicion');
 			$table->float('Total', 6);
-			$table->float('Adelanto', 6);
-			$table->boolean('Deposito')->default(0);
-			$table->boolean('Liquidado')->default(0);
+			$table->string('Nombre', 30);
+			$table->string('Ap_paterno', 20);
+			$table->string('Ap_materno', 20)->nullable();
+			$table->string('Cp', 8)->nullable();
+			$table->string('Estado', 30);
+			$table->string('Ciudad', 30);
+			$table->string('Colonia', 30);
+			$table->string('Calle', 40);
+			$table->string('Numero', 6);
+			$table->string('Telefono', 15);
+			$table->string('Rfc', 13)->nullable();
 		});
 	}
 

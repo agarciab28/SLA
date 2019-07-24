@@ -16,8 +16,6 @@
     <ul id="slide-out" class="sidenav sidenav-fixed">
       <li> <img class="responsive-img" src="" alt="Logo-Salon"> </li>
       <li id="home"> <a href="{{route('admin_home')}}"><i class="black-text fas fa-home"></i> Inicio</a> </li>
-      <li id="clients"> <a href="{{route('admin_clients')}}"><i class="black-text fas fa-user"></i> Clientes</a> </li>
-      <li id="new_client"> <a href="{{route('admin_new_client')}}"><i class="black-text fas fa-user-plus"></i> Registrar Cliente</a> </li>
       <li id="events"> <a href="{{route('admin_events')}}"><i class="black-text fas fa-calendar"></i> Eventos</a> </li>
       <li id="new_event"> <a href="{{route('admin_new_event')}}"><i class="black-text fas fa-calendar-plus"></i> Nuevo Evento</a> </li>
       <li id="charts"> <a href="{{route('admin_charts')}}"><i class="black-text fas fa-chart-bar"></i> Estadísticas</a> </li>

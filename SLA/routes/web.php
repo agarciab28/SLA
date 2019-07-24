@@ -20,14 +20,6 @@ Route::prefix('admin')->group(function () {
         return view('admin.home');
     })->name('admin_home');
 
-    Route::get('clientes', function () {
-        return view('admin.clients');
-    })->name('admin_clients');
-
-    Route::get('nuevo_cliente', function () {
-        return view('admin.new_client');
-    })->name('admin_new_client');
-
     Route::get('eventos', function () {
         return view('admin.events');
     })->name('admin_events');
